@@ -8,6 +8,7 @@ import {
   Mail, Phone, MapPin,
   Cpu
 } from 'lucide-react';
+
 const stats = [
   { number: '50,000+', label: 'Deliveries Monthly' },
   { number: '99.7%', label: 'Success Rate' },
@@ -16,15 +17,25 @@ const stats = [
 
 const HeroSection = () => {
   return (
-    <div className="relative min-h-screen bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 overflow-hidden">
-      {/* Background Animation */}
-      <div className="absolute inset-0 w-full h-full">
-        <div className="absolute w-96 h-96 bg-blue-500 rounded-full filter blur-3xl opacity-20 animate-pulse -top-10 -left-10" />
-        <div className="absolute w-96 h-96 bg-indigo-500 rounded-full filter blur-3xl opacity-20 animate-pulse top-1/2 -right-10" />
+    <div className="relative min-h-screen overflow-hidden">
+      {/* Video Background */}
+      <div className="absolute inset-0 w-full h-full z-0">
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline 
+          className="w-full h-full object-cover"
+        >
+          <source src="/images/v.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        {/* Overlay for better text visibility */}
+        <div className="absolute inset-0 bg-blue-900/70"></div>
       </div>
 
       {/* Content */}
-      <div className="relative container mx-auto px-4 pt-20 pb-16">
+      <div className="relative z-10 container mx-auto px-4 pt-20 pb-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column */}
           <div className="text-white space-y-8">

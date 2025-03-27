@@ -36,10 +36,8 @@ export default function Contact() {
         </motion.form>
         <div className="mt-16 text-center">
           <h3 className="text-2xl font-semibold mb-4">Contact Details</h3>
-          <p className="text-muted-foreground text-lg">Email: contact@LastMile.com</p>
-          <p className="text-muted-foreground text-lg">Phone: +1 (555) 123-4567</p>
-          <p className="text-muted-foreground text-lg">Address: 123 LastMile Street, Suite 100, City, State</p>
-
+          <p className="text-muted-foreground text-lg">Email: hello@lastmiletech.net</p>
+      
           <div className='flex justify-center space-x-4 mt-5'>
               <a href='https://www.facebook.com' target='_blank' rel='noopener noreferrer' className='text-primary hover:text-primary/80'>
                 <FaFacebookF size={24} />
