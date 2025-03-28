@@ -35,7 +35,45 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
-              {/* <Drone className="w-8 h-8 text-blue-400" /> */}
+            <svg 
+              width="50px" 
+              height="50px" 
+              viewBox="0 -37 256 256" 
+              xmlns="http://www.w3.org/2000/svg" 
+              style={{ overflow: 'visible' }}  // Prevents clipping during animation
+            >
+              <style>{`
+                #paper-airplane {
+                  animation: float 3s ease-in-out infinite;
+                }
+                #wing {
+                  animation: tilt 2.5s ease-in-out infinite;
+                }
+                @keyframes float {
+                  0%, 100% { transform: translateY(0) rotate(0deg); }
+                  50% { transform: translateY(-10px) rotate(2deg); }
+                }
+                @keyframes tilt {
+                  0%, 100% { transform: rotate(0deg); }
+                  50% { transform: rotate(-5deg); }
+                }
+              `}</style>
+
+              <g id="SVGRepo_iconCarrier">
+                <g id="paper-airplane">
+                  <path 
+                    id="wing"
+                    d="M216.358 174.771C255.136 205.772 279.98 113.202 218.194 96.135C166.346 81.769 114.174 106.397 61.894 163.862C61.894 163.862 158.461 128.54 216.358 174.771Z" 
+                    fill="#e4e6e7"
+                  />
+                  <path 
+                    d="M62.758 163.105C99.916 124.543 161.701 81.553 219.274 97.431C232.668 101.212 242.174 108.989 248.331 118.278L193.89 8.425C186.113-3.997 166.238-1.404 155.004 8.101L11.126 128.648C-1.944 139.882-2.7 159.865 9.397 171.963C20.091 182.657 37.05 183.628 48.824 174.123L62.758 163.105Z" 
+                    fill="#e4e6e7"
+                  />
+                </g>
+              </g>
+            </svg>
+
               <span className="text-xl font-bold">LastMile</span>
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
