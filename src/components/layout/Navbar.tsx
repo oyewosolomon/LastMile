@@ -41,7 +41,6 @@ const Navbar = () => {
     },
     { title: 'How It Works', href: '#how-it-works' },
     { title: 'About', href: '#about' },
-    { title: 'Contact', href: '#contact' }
   ];
 
   return (
